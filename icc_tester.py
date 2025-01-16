@@ -5,7 +5,7 @@ import numpy as np
 
 # Function to run iccdump and capture the output
 def extract_lut_from_icc(icc_file):
-    result = subprocess.run([r"C:\Users\sams.sridharan\Downloads\Argyll_V3.3.0_win64_exe\Argyll_V3.3.0\bin\iccdump", icc_file], capture_output=True, text=True)
+    result = subprocess.run(["https://github.com/Samsree03/Icc_tester/blob/main/iccdump.exe", icc_file], capture_output=True, text=True)
     return result.stdout
 
 # Function to extract all tags from the iccdump output
